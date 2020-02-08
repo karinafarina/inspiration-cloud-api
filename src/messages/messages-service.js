@@ -23,7 +23,7 @@ const MessagesService = {
   },
 
   deleteMessage(knex, messageId) {
-    return knex('message')
+    return knex('messages')
       //Make sure id is an integer
       .where('id', parseInt(messageId, 10))
       .delete()
