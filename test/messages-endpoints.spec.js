@@ -82,13 +82,11 @@ describe.only('Message Endpoints', function() {
         .send(newMessage)
         .expect(201)
         .expect(res => {
-          console.log('response', res.body.message, newMessage.message)
           expect(res.body.message).to.eql(newMessage.message)
           expect(res.body).to.have.property('id')
           expect(res.headers.location).to.eql(`/api/messages/${res.body.id}`)
         })
         .then(res => {
-          console.log('res', res.body)
           return supertest(app)
             .get(`/api/messages/${res.body.id}`)
             .expect(res.body)

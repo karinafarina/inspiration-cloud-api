@@ -44,7 +44,6 @@ messagesRouter
       const knexInstance = req.app.get('db')
       MessagesService.getById(knexInstance, messageId)
         .then(message => {
-          console.log('message', message)
           if (!message) {
             return res.status(404).json({
               error: { message: `Message Not Found` }
