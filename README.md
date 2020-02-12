@@ -1,26 +1,11 @@
-# Express Boilerplate!
+Title: Inspiration Cloud
+Live API: https://fierce-coast-06372.herokuapp.com/api/messages
+API documentation: https://github.com/karinafarina/inspiration-cloud-api
 
-This is a boilerplate project used for starting new projects!
+![Screen Shot 2020-02-12 at 11 44 49 AM](https://user-images.githubusercontent.com/19866899/74356985-34d01100-4d8d-11ea-8d09-558fd1f762ac.png)
 
-## Set up
+Summary:
+User can come to Inspiration Cloud for encouragement, inspiration and to share their strength with others.
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
-
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
-
-## Scripts
-
-Start the application `npm start`
-
-Start nodemon for the application `npm run dev`
-
-Run the tests `npm test`
-
-## Deploying
-
-When your new project is ready for deployment, add a new Heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.# inspiration-cloud-api
+Technology Used:
+NODE.js, Express.js, Postgresql, Chai, Supertest
